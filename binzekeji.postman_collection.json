@@ -1,0 +1,699 @@
+{
+	"info": {
+		"_postman_id": "705d9bd9-1ac6-41a6-8601-99c230c66ee6",
+		"name": "gd",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "https://binze.pypygo.com/pub/login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "accountName",
+							"value": "admin",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "c7^a1%",
+							"type": "text"
+						},
+						{
+							"key": "platform",
+							"value": "x-pc",
+							"type": "text"
+						},
+						{
+							"key": "otherLogout",
+							"value": "true",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "https://binze.pypygo.com/pub/login",
+					"protocol": "https",
+					"host": [
+						"binze",
+						"pypygo",
+						"com"
+					],
+					"path": [
+						"pub",
+						"login"
+					]
+				},
+				"description": "登录"
+			},
+			"response": []
+		},
+		{
+			"name": "获取头像文件",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6InFkMmU4dmV3S2tkREF6V1BldmlqRUJ4VGtySER5RUtjd2cwY091SnhkVDAiLCJ0eXAiOiJKV1QifQ.eyJ1c2VyaWQiOiJhZG1pbiIsInJvbGUiOiJyb290IiwiZXhwIjoxNjMxNzg4MDEzLCJpYXQiOjE2MzE3MDE2MTMsImlzcyI6Imdvc3ZjLmNvbSIsIm5iZiI6MTYzMTcwMTYxMywic3ViIjoic2NoZWR1bGluZy1tYW5hZ2VyIn0.Xv6mocvmm1Ic6OWJANH4-Ym16Fw1uwX36LlHbZoGOXcONpNXruPL1TNaG8ViWbKYtDcZjRELrhpbWZnro7F7hw",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://binze.pypygo.com/api/account/v1/loadImg/6141be720749a0fb99fda397.jpeg",
+					"protocol": "https",
+					"host": [
+						"binze",
+						"pypygo",
+						"com"
+					],
+					"path": [
+						"api",
+						"account",
+						"v1",
+						"loadImg",
+						"6141be720749a0fb99fda397.jpeg"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "登录",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "accountName",
+							"value": "admin",
+							"description": "必要",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "c7^a1%",
+							"description": "必要",
+							"type": "text"
+						},
+						{
+							"key": "platform",
+							"value": "x-pc",
+							"description": "必要",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://binze.pypygo.com/pub/login",
+					"protocol": "https",
+					"host": [
+						"binze",
+						"pypygo",
+						"com"
+					],
+					"path": [
+						"pub",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "获取菜单",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6InFkMmU4dmV3S2tkREF6V1BldmlqRUJ4VGtySER5RUtjd2cwY091SnhkVDAiLCJ0eXAiOiJKV1QifQ.eyJ1c2VyaWQiOiJhZG1pbiIsInJvbGUiOiJyb290IiwiZXhwIjoxNjMxNzg4MDEzLCJpYXQiOjE2MzE3MDE2MTMsImlzcyI6Imdvc3ZjLmNvbSIsIm5iZiI6MTYzMTcwMTYxMywic3ViIjoic2NoZWR1bGluZy1tYW5hZ2VyIn0.Xv6mocvmm1Ic6OWJANH4-Ym16Fw1uwX36LlHbZoGOXcONpNXruPL1TNaG8ViWbKYtDcZjRELrhpbWZnro7F7hw",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://binze.pypygo.com/api/account/v1/menuPermi",
+					"protocol": "https",
+					"host": [
+						"binze",
+						"pypygo",
+						"com"
+					],
+					"path": [
+						"api",
+						"account",
+						"v1",
+						"menuPermi"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "上传头像文件",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6InFkMmU4dmV3S2tkREF6V1BldmlqRUJ4VGtySER5RUtjd2cwY091SnhkVDAiLCJ0eXAiOiJKV1QifQ.eyJ1c2VyaWQiOiJhZG1pbiIsInJvbGUiOiJyb290IiwiZXhwIjoxNjMxNzg4MDEzLCJpYXQiOjE2MzE3MDE2MTMsImlzcyI6Imdvc3ZjLmNvbSIsIm5iZiI6MTYzMTcwMTYxMywic3ViIjoic2NoZWR1bGluZy1tYW5hZ2VyIn0.Xv6mocvmm1Ic6OWJANH4-Ym16Fw1uwX36LlHbZoGOXcONpNXruPL1TNaG8ViWbKYtDcZjRELrhpbWZnro7F7hw",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "avatar",
+							"description": "必要",
+							"type": "file",
+							"src": "/Users/fire/Downloads/微软免费.png"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://binze.pypygo.com/api/account/v1/uploadImg",
+					"protocol": "https",
+					"host": [
+						"binze",
+						"pypygo",
+						"com"
+					],
+					"path": [
+						"api",
+						"account",
+						"v1",
+						"uploadImg"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "添加账号",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6InFkMmU4dmV3S2tkREF6V1BldmlqRUJ4VGtySER5RUtjd2cwY091SnhkVDAiLCJ0eXAiOiJKV1QifQ.eyJ1c2VyaWQiOiJhZG1pbiIsInJvbGUiOiJyb290IiwiZXhwIjoxNjMxNzg4MDEzLCJpYXQiOjE2MzE3MDE2MTMsImlzcyI6Imdvc3ZjLmNvbSIsIm5iZiI6MTYzMTcwMTYxMywic3ViIjoic2NoZWR1bGluZy1tYW5hZ2VyIn0.Xv6mocvmm1Ic6OWJANH4-Ym16Fw1uwX36LlHbZoGOXcONpNXruPL1TNaG8ViWbKYtDcZjRELrhpbWZnro7F7hw",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "account",
+							"value": "mingming",
+							"description": "必要",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "123456",
+							"description": "必要",
+							"type": "text"
+						},
+						{
+							"key": "mobile",
+							"value": "17722806690",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "better.tian@qq.com",
+							"type": "text"
+						},
+						{
+							"key": "avatarUri",
+							"value": "/api/account/v1/loadImg/614221879e5b6fc33d494bf3.png",
+							"description": "必要",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://binze.pypygo.com/api/account/v1/create",
+					"protocol": "https",
+					"host": [
+						"binze",
+						"pypygo",
+						"com"
+					],
+					"path": [
+						"api",
+						"account",
+						"v1",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "更新账号",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6InFkMmU4dmV3S2tkREF6V1BldmlqRUJ4VGtySER5RUtjd2cwY091SnhkVDAiLCJ0eXAiOiJKV1QifQ.eyJ1c2VyaWQiOiJhZG1pbiIsInJvbGUiOiJyb290IiwiZXhwIjoxNjMxNzg4MDEzLCJpYXQiOjE2MzE3MDE2MTMsImlzcyI6Imdvc3ZjLmNvbSIsIm5iZiI6MTYzMTcwMTYxMywic3ViIjoic2NoZWR1bGluZy1tYW5hZ2VyIn0.Xv6mocvmm1Ic6OWJANH4-Ym16Fw1uwX36LlHbZoGOXcONpNXruPL1TNaG8ViWbKYtDcZjRELrhpbWZnro7F7hw",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "mobile",
+							"value": "19722806690",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "tian@qq.com",
+							"type": "text"
+						},
+						{
+							"key": "avatarUri",
+							"value": "/api/account/v1/loadImg/614221879e5b6fc33d494bf3.png",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://binze.pypygo.com/api/account/v1/update/mingming",
+					"protocol": "https",
+					"host": [
+						"binze",
+						"pypygo",
+						"com"
+					],
+					"path": [
+						"api",
+						"account",
+						"v1",
+						"update",
+						"mingming"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "更新密码",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6InFkMmU4dmV3S2tkREF6V1BldmlqRUJ4VGtySER5RUtjd2cwY091SnhkVDAiLCJ0eXAiOiJKV1QifQ.eyJ1c2VyaWQiOiJhZG1pbiIsInJvbGUiOiJyb290IiwiZXhwIjoxNjMxODA0NTE0LCJpYXQiOjE2MzE3MTgxMTQsImlzcyI6Imdvc3ZjLmNvbSIsIm5iZiI6MTYzMTcxODExNCwic3ViIjoic2NoZWR1bGluZy1tYW5hZ2VyIn0.l9QebVkzPOsUsXsGqfm0IVWaQ6uNhV9ZUsV4w1FcaKbkjCLVPan9D7xs6AhOtYwQTQvDfP4NQuUJHoPV5ghpNw",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "oldPwd",
+							"value": "123456",
+							"type": "text"
+						},
+						{
+							"key": "newPwd",
+							"value": "123456789",
+							"type": "text"
+						},
+						{
+							"key": "avatarUri",
+							"value": "/api/account/v1/loadImg/614221879e5b6fc33d494bf3.png",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "https://binze.pypygo.com/api/account/v1/changePwd/admin",
+					"protocol": "https",
+					"host": [
+						"binze",
+						"pypygo",
+						"com"
+					],
+					"path": [
+						"api",
+						"account",
+						"v1",
+						"changePwd",
+						"admin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "强制服务端“退出”",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "accountName",
+							"value": "mingming",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "123456",
+							"type": "text"
+						},
+						{
+							"key": "platform",
+							"value": "x-pc",
+							"type": "text"
+						},
+						{
+							"key": "otherLogout",
+							"value": "true",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://binze.pypygo.com/pub/login",
+					"protocol": "https",
+					"host": [
+						"binze",
+						"pypygo",
+						"com"
+					],
+					"path": [
+						"pub",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "刷新token",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6InFkMmU4dmV3S2tkREF6V1BldmlqRUJ4VGtySER5RUtjd2cwY091SnhkVDAiLCJ0eXAiOiJKV1QifQ.eyJ1c2VyaWQiOiJhZG1pbiIsInJvbGUiOiJyb290IiwiZXhwIjoxNjMxNzg4MDEzLCJpYXQiOjE2MzE3MDE2MTMsImlzcyI6Imdvc3ZjLmNvbSIsIm5iZiI6MTYzMTcwMTYxMywic3ViIjoic2NoZWR1bGluZy1tYW5hZ2VyIn0.Xv6mocvmm1Ic6OWJANH4-Ym16Fw1uwX36LlHbZoGOXcONpNXruPL1TNaG8ViWbKYtDcZjRELrhpbWZnro7F7hw",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "refresh",
+							"value": "614234e654e2698eaf84d964",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://binze.pypygo.com/api/account/v1/refreshToken",
+					"protocol": "https",
+					"host": [
+						"binze",
+						"pypygo",
+						"com"
+					],
+					"path": [
+						"api",
+						"account",
+						"v1",
+						"refreshToken"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "管理员解锁",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6InFkMmU4dmV3S2tkREF6V1BldmlqRUJ4VGtySER5RUtjd2cwY091SnhkVDAiLCJ0eXAiOiJKV1QifQ.eyJ1c2VyaWQiOiJhZG1pbiIsInJvbGUiOiJyb290IiwiZXhwIjoxNjMxODM4MDgzLCJpYXQiOjE2MzE3NTE2ODMsImlzcyI6Imdvc3ZjLmNvbSIsIm5iZiI6MTYzMTc1MTY4Mywic3ViIjoic2NoZWR1bGluZy1tYW5hZ2VyIn0.i0h01RUAa8TCpmC2DAWlnL99evidwe_p6UMaatIwDcvmnnd1x__wSBxHiMnsOzepUtpLoK0iJCT2IMn1VavSRg",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "accountName",
+							"value": "mingming",
+							"type": "text"
+						},
+						{
+							"key": "platform",
+							"value": "x-pc",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://binze.pypygo.com/api/account/v1/unlock",
+					"protocol": "https",
+					"host": [
+						"binze",
+						"pypygo",
+						"com"
+					],
+					"path": [
+						"api",
+						"account",
+						"v1",
+						"unlock"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "管理员补录企业资料",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6InFkMmU4dmV3S2tkREF6V1BldmlqRUJ4VGtySER5RUtjd2cwY091SnhkVDAiLCJ0eXAiOiJKV1QifQ.eyJ1c2VyaWQiOiJhZG1pbiIsInJvbGUiOiJyb290IiwiZXhwIjoxNjMxODM4MDgzLCJpYXQiOjE2MzE3NTE2ODMsImlzcyI6Imdvc3ZjLmNvbSIsIm5iZiI6MTYzMTc1MTY4Mywic3ViIjoic2NoZWR1bGluZy1tYW5hZ2VyIn0.i0h01RUAa8TCpmC2DAWlnL99evidwe_p6UMaatIwDcvmnnd1x__wSBxHiMnsOzepUtpLoK0iJCT2IMn1VavSRg",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "高度创新技术有限公司",
+							"type": "text"
+						},
+						{
+							"key": "address",
+							"value": "广寒宫666号",
+							"type": "text"
+						},
+						{
+							"key": "desc",
+							"value": "牛逼的企业，专注工业级太空无人机",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://binze.pypygo.com/api/account/v1/corporation",
+					"protocol": "https",
+					"host": [
+						"binze",
+						"pypygo",
+						"com"
+					],
+					"path": [
+						"api",
+						"account",
+						"v1",
+						"corporation"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "退出",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6InFkMmU4dmV3S2tkREF6V1BldmlqRUJ4VGtySER5RUtjd2cwY091SnhkVDAiLCJ0eXAiOiJKV1QifQ.eyJ1c2VyaWQiOiJhZG1pbiIsInJvbGUiOiJyb290IiwiZXhwIjoxNjMxNzg4MDEzLCJpYXQiOjE2MzE3MDE2MTMsImlzcyI6Imdvc3ZjLmNvbSIsIm5iZiI6MTYzMTcwMTYxMywic3ViIjoic2NoZWR1bGluZy1tYW5hZ2VyIn0.Xv6mocvmm1Ic6OWJANH4-Ym16Fw1uwX36LlHbZoGOXcONpNXruPL1TNaG8ViWbKYtDcZjRELrhpbWZnro7F7hw",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://binze.pypygo.com/api/account/v1/logout",
+					"protocol": "https",
+					"host": [
+						"binze",
+						"pypygo",
+						"com"
+					],
+					"path": [
+						"api",
+						"account",
+						"v1",
+						"logout"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "更新账号邮箱",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6InFkMmU4dmV3S2tkREF6V1BldmlqRUJ4VGtySER5RUtjd2cwY091SnhkVDAiLCJ0eXAiOiJKV1QifQ.eyJ1c2VyaWQiOiJhZG1pbiIsInJvbGUiOiJyb290IiwiZXhwIjoxNjMxNzg4MDEzLCJpYXQiOjE2MzE3MDE2MTMsImlzcyI6Imdvc3ZjLmNvbSIsIm5iZiI6MTYzMTcwMTYxMywic3ViIjoic2NoZWR1bGluZy1tYW5hZ2VyIn0.Xv6mocvmm1Ic6OWJANH4-Ym16Fw1uwX36LlHbZoGOXcONpNXruPL1TNaG8ViWbKYtDcZjRELrhpbWZnro7F7hw",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "email",
+							"value": "tian@qq.com",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://binze.pypygo.com/api/account/v1/updateEmail/mingming",
+					"protocol": "https",
+					"host": [
+						"binze",
+						"pypygo",
+						"com"
+					],
+					"path": [
+						"api",
+						"account",
+						"v1",
+						"updateEmail",
+						"mingming"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "更新账号手机号",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6InFkMmU4dmV3S2tkREF6V1BldmlqRUJ4VGtySER5RUtjd2cwY091SnhkVDAiLCJ0eXAiOiJKV1QifQ.eyJ1c2VyaWQiOiJhZG1pbiIsInJvbGUiOiJyb290IiwiZXhwIjoxNjMxNzg4MDEzLCJpYXQiOjE2MzE3MDE2MTMsImlzcyI6Imdvc3ZjLmNvbSIsIm5iZiI6MTYzMTcwMTYxMywic3ViIjoic2NoZWR1bGluZy1tYW5hZ2VyIn0.Xv6mocvmm1Ic6OWJANH4-Ym16Fw1uwX36LlHbZoGOXcONpNXruPL1TNaG8ViWbKYtDcZjRELrhpbWZnro7F7hw",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "mobile",
+							"value": "19722806690",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://binze.pypygo.com/api/account/v1/updateMobile/mingming",
+					"protocol": "https",
+					"host": [
+						"binze",
+						"pypygo",
+						"com"
+					],
+					"path": [
+						"api",
+						"account",
+						"v1",
+						"updateMobile",
+						"mingming"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "更新账号头像",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6InFkMmU4dmV3S2tkREF6V1BldmlqRUJ4VGtySER5RUtjd2cwY091SnhkVDAiLCJ0eXAiOiJKV1QifQ.eyJ1c2VyaWQiOiJhZG1pbiIsInJvbGUiOiJyb290IiwiZXhwIjoxNjMxNzg4MDEzLCJpYXQiOjE2MzE3MDE2MTMsImlzcyI6Imdvc3ZjLmNvbSIsIm5iZiI6MTYzMTcwMTYxMywic3ViIjoic2NoZWR1bGluZy1tYW5hZ2VyIn0.Xv6mocvmm1Ic6OWJANH4-Ym16Fw1uwX36LlHbZoGOXcONpNXruPL1TNaG8ViWbKYtDcZjRELrhpbWZnro7F7hw",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "avatarUri",
+							"value": "/api/account/v1/loadImg/614221879e5b6fc33d494bf3.png",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://binze.pypygo.com/api/account/v1/updateAvatar/mingming",
+					"protocol": "https",
+					"host": [
+						"binze",
+						"pypygo",
+						"com"
+					],
+					"path": [
+						"api",
+						"account",
+						"v1",
+						"updateAvatar",
+						"mingming"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

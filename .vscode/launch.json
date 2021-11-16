@@ -1,0 +1,53 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "go dev debug run",
+            "type": "go",
+            "request": "launch",
+            "mode": "auto",
+            "program": "${workspaceFolder}",
+            "cwd": "${workspaceFolder}",
+            "env": {
+                "envflag": "dev"
+            },
+            "showLog": true,
+        },
+        {
+            "name": "go test debug run",
+            "type": "go",
+            "request": "launch",
+            "mode": "auto",
+            "program": "${workspaceFolder}",
+            "cwd": "${workspaceFolder}",
+            "env": {
+                "envflag": "test"
+            },
+            "showLog": true,
+        },
+        {
+            "name": "go uat debug run",
+            "type": "go",
+            "request": "launch",
+            "mode": "auto",
+            "program": "${workspaceFolder}",
+            "cwd": "${workspaceFolder}",
+            "env": {
+                "envflag": "uat"
+            },
+            "showLog": true,
+        },
+        {
+            "name": "go prod debug run",
+            "type": "go",
+            "request": "launch",
+            "mode": "auto",
+            "program": "${workspaceFolder}",
+            "cwd": "${workspaceFolder}",
+            "env": {
+                "envflag": "prod"
+            },
+            "showLog": true,
+        }
+    ]
+}
